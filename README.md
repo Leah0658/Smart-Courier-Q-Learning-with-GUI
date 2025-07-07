@@ -71,14 +71,16 @@ This project successfully implements a graphical user interface (GUI) applicatio
 
 4. Follow in-notebook instructions. Training will launch a GUI and begin automatically.
 
-## Project Structure
+## Files
 
 ```
-├── smart-courier-qlearning-gridworld.ipynb        # Main training and visualization notebook
+├── Smart Courier Q-Learning with GUI.ipynb        # Main training and visualization notebook
 ├── icon/
 │   ├── agent.png          # Agent icon
 │   ├── item.png           # Item icon
 │   └── target.png         # Target icon
+├── README.md
+
 ```
 
 ## Dependencies
