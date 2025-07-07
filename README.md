@@ -36,17 +36,18 @@ The learning algorithm uses tabular Q-learning with an ε-greedy strategy and up
   - Time elapsed
   - Optimal steps vs actual steps
 
-## Screenshots
-
-> Note: You may need to close the GUI window manually after training to continue execution.
-
-![Agent Screenshot](icon/agent.png)
-![Item Screenshot](icon/item.png)
-![Target Screenshot](icon/target.png)
 
 ## Results
 
-After training, a plot is generated comparing the agent’s actual steps vs the theoretical optimal steps for each episode, helping to measure the agent's learning performance over time.
+Before training, the agent's average steps to reach the item were 68.2, with a total average of 209.8 steps to complete the task. After 100 training episodes, the agent significantly improved its performance, demonstrating a notable reduction in the average number of steps required. This improvement showcases the effectiveness of the Q-learning approach.
+
+## Decision-Making and Insights
+
+The Q-learning agent is designed to find optimal paths for item retrieval and delivery. Our decision-making model incorporates an epsilon-greedy strategy, allowing the agent to explore new paths with a 5% probability of taking a random action, rather than strictly following the maximum Q-value. This balance of exploration and exploitation ensures the agent can discover more efficient routes while still leveraging its learned knowledge.
+
+## Conclusion
+
+This project successfully implements a graphical user interface (GUI) application demonstrating a Q-learning agent trained to navigate a grid world. The agent's primary objective is to efficiently locate and collect an item, then deliver it to a designated target. Through iterative training and Q-value updates, the agent progressively learns optimal actions for various states, ultimately achieving task completion with minimal steps. This work effectively illustrates the practical application of the Q-learning algorithm within a reinforcement learning context, enhanced by a GUI for real-time visualization of the agent's learning and improved decision-making.
 
 ## How to Run
 
@@ -55,7 +56,6 @@ After training, a plot is generated comparing the agent’s actual steps vs the 
 1. Make sure you have Python 3 and required libraries installed:
    ```bash
    pip install numpy matplotlib pillow
-
 
 2. Place the required image files in an `icon/` folder:
 
@@ -71,7 +71,7 @@ After training, a plot is generated comparing the agent’s actual steps vs the 
 
 4. Follow in-notebook instructions. Training will launch a GUI and begin automatically.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── smart-courier-qlearning-gridworld.ipynb        # Main training and visualization notebook
